@@ -25,14 +25,14 @@
                 unmuteOverlay: "hidden",
             };
             document.addEventListener("DOMContentLoaded", function () {
-                let swf = './papas-pizzeria/papas-pizzeria.swf';
+                let swf = './papas-pizzeria.swf';
                 if (swf) {
                     let ruffle = window.RufflePlayer.newest();
                     let player = Object.assign(document.getElementById("container").appendChild(ruffle.createPlayer()), {
                         style: 'width: 100vw; height: 100vh',
                     });
                                       player.load({
-                        url: './papas-pizzeria/papas-pizzeria.swf'
+                        url: './papas-pizzeria.swf'
                     });  
 
                 }
